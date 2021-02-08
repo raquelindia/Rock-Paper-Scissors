@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <script>
+        let choices = ['Rock', 'Paper', 'Scissors'];
+        function computerPlay() {
+            let randomChoice = choices[Math.floor(Math.random()*choices.length)];
+            return randomChoice;
+        }
+    computerPlay();
+        let playRound = function(playerSelection, computerSelection) {
+        if (playerSelection === 'rock' && computerPlay === 'Paper') {
+            return "You Lose! Paper beats Rock";
+        } else if (playerSelection === 'rock' && computerSelection === 'Scissors') {
+            return "You Win! Rock beats Scissors";
+        } else if (playerSelection === 'rock' && computerSelection === 'Paper') {
+            return "You Lose! Paper beats Rock";
+        } else if (playerSelection === 'rock' && computerSelection === 'Rock') {
+            return "It's a tie!";
+        } else if (playerSelection === 'paper' && computerSelection === 'Scissors') {
+            return "You Lose! Scissors beats Paper";
+        } else if (playerSelection === 'paper' && computerSelection === 'Rock') {
+            return "You Win! Paper beats Rock";
+        } else if (playerSelection === 'paper' && computerSelection === 'Paper') {
+            return "It's a tie!";
+        } else if (playerSelection === 'scissors' && computerSelection === 'Rock') {
+            return "You Lose! Rock beats Scissors";
+        } else if (playerSelection === 'scissors' && computerSelection === 'Paper') {
+            return "You win! Scissors beats Paper";
+        } else if (playerSelection === 'scissors' && computerSelection === 'Scissors') {
+            return "It's a tie!";
+        }
+        
+  }
+    playRound();
+    
+    let answer = prompt("Rock, Paper, or Scissors?").toLowerCase();
+    
+    let playerSelection = answer;
+    let computerSelection = computerPlay();
+   
+    
+        </script>
+    </html>
